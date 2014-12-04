@@ -29,6 +29,9 @@
   }
   .issue-footer {
     padding: 0 1em 1em 1em;
+    .kreta-icon-item span {
+      display: none;
+    }
   }
   .issue-actions {
     position: absolute;
@@ -68,5 +71,11 @@
       width: 40px;
       @include border-radius($standardRadius);
     }
+  }
+}
+
+@media #{$large-up} {
+  .issue-footer .kreta-icon-item span{
+    display: inline-block;
   }
 }
